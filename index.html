@@ -198,7 +198,6 @@
     <div class="divider-line"></div>
   </div>
 
-  <!-- CONTACTO -->
 
   <section class="contacto reveal" id="contacto">
     <div class="section-header">
@@ -206,10 +205,8 @@
       <h2 class="section-title">Con<em>tacto</em></h2>
     </div>
 
-```
 <div class="contacto-grid">
 
-  <!-- TikTok -->
   <a class="social-card" href="https://www.tiktok.com/@sr.fenix._?is_from_webapp=1&sender_device=pc" target="_blank" rel="noopener noreferrer">
     <div class="social-card-glow social-card-glow--tiktok"></div>
     <div class="social-icon">
@@ -229,7 +226,6 @@
     </div>
   </a>
 
-  <!-- Instagram -->
   <a class="social-card" href="https://www.instagram.com/sr.fenix._?igsh=MXM4ZTljenEzdThldw%3D%3D&utm_source=qr&wa_status_inline=true" target="_blank" rel="noopener noreferrer">
     <div class="social-card-glow social-card-glow--instagram"></div>
     <div class="social-icon social-icon--instagram">
@@ -255,11 +251,9 @@
   <p>¿Consultas sobre pedidos o piezas personalizadas?<br/>
   <span>Escríbenos directamente por Instagram o TikTok.</span></p>
 </div>
-```
 
   </section>
 
-  <!-- FOOTER -->
 
   <footer>
     <div class="footer-top">
@@ -303,7 +297,7 @@
   </footer>
 
   <script>
-    /* ── CURSOR ── */
+    
     const cursor = document.getElementById('cursor');
     const ring = document.getElementById('cursorRing');
     document.addEventListener('mousemove', e => {
@@ -315,7 +309,7 @@
       }, 60);
     });
 
-    /* ── HAMBURGER ── */
+    
     function toggleMenu() {
       const nav = document.getElementById('mainNav');
       const ham = document.getElementById('hamburger');
@@ -329,7 +323,7 @@
       ham.classList.remove('open');
     }
 
-    /* ── REVEAL ON SCROLL ── */
+    
     const reveals = document.querySelectorAll('.reveal');
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry, i) => {
@@ -340,7 +334,7 @@
     }, { threshold: 0.1 });
     reveals.forEach(el => observer.observe(el));
 
-    /* ── CARRUSELES ── */
+   
     function initCarousel(n) {
       const track = document.getElementById('carouselTrack' + n);
       const dots = document.querySelectorAll('#carouselDots' + n + ' .dot');
